@@ -1,17 +1,14 @@
 pipeline {
     agent any
-    environment {
-        CI = 'true'
-    }
     stages {
         stage('Build') {
             steps {
-                sh 'echo build'
+                echo 'echo build'
             }
         }
         stage('Test') {
             steps {
-                sh 'echo test'
+                echo 'echo test'
             }
         }
     }
