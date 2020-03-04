@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh "echo `pwd`"
+        sh "python3 hello.py"
       }
     }
 
